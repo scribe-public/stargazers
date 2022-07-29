@@ -22,7 +22,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: run script
-        run: python stargazers.py --repo scribe_public/gitgat -t ${{ secrets.GITHUB_TOKEN }} --output-type cvs -o gitgat_stars.csv
+        run: python stargazers.py --repo scribe_public/gitgat -t ${{ secrets.GITHUB_TOKEN }} --output-type csv -o gitgat_stars.csv
         
       - name: uplaod artifact before buidling the app
         uses: actions/upload-artifact@v3
