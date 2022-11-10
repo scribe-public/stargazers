@@ -9,7 +9,6 @@
 
 name: "Frogbot Scan and Fix"
 on:
-  workflow_dispatch:
   push:
     branches: [ "master" ]
 permissions:
